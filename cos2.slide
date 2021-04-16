@@ -1,12 +1,16 @@
-# Container Operating Systems
+Container Operating Systems
 Bin Chen
 
-* What and Why
-- what: *install* and *run* software using container
-- why:
-  * use only what is needed - smaller footprint, more secure
-  * use contaienr as the package manager and app sandbox
-  * container is the modern way of delivery software
+* Agenda
+- why we need it?
+- components of a container os
+- open source options
+- how to build one?
+
+* Why
+- container is the modern way of delivery software
+- NIST SP 800-190
+  > Use container-specific host OSs instead of general-purpose ones to reduce attack surfaces.
 
 * Generic OS
 - Ubuntu - Debian based
@@ -15,33 +19,27 @@ Bin Chen
 - Android
 
 * Package Management
-
-package format - tool  - OS
+ [package format - tool  - OS]
 - deb - apt/dpkg - Debian/Ubuntu
 - spec file/rpm - yum/dnf - RHEL
 - ebuild - portage - Gentoo
 - oci image - docker
 
 * Container Os
-- ~~container linux (CoreOS)~~
 - Federa coreos (Redhat/IBM)
-- flatcar Linux (kinvolk)
+- container linux/flatcar Linux (kinvolk)
 - Google Container OS (Google)
 - EKS node AMI (AWS)
 - Bottlerocket OS (AWS)
 - Rancher OS (Rancher)
-- Photon OS (VMWare)
 
 * Tasks
-- build
-  * kernel
-  * packages
-  * fs and image, partitions
-- run
-- components
-- customize
-- features
-- architecture supported (e.g ARM64)
+- Build: kernel, packages, filesystems and image format
+- Run enviroment
+- Components
+- Customize
+- Additional features
+- Architecture supported (e.g ARM64)
 
 * Build
 - A: build very thing from source code and put them into a bootable image
@@ -69,7 +67,7 @@ package format - tool  - OS
     * dns
     * container runtime and image tools
     * instance initialization (cloud-init)
-- package/artitfact management (optional)
+- package/artifact management (optional)
 - platform enviroment
 - security features
 
@@ -99,14 +97,15 @@ package format - tool  - OS
 - containerd
 - podman
 
-* Features
+* Operations Aspects
 - update and patch (kernel and components)
 - inventory  management
 
 * Security Features
 - SELinux
-- verifid boot
+- verified boot
 - encrypt on rest
+- Authentication
 
 * Bottlerocket
 - [Components and Build](https://github.com/bottlerocket-os/bottlerocket/tree/develop/packages)
@@ -121,7 +120,6 @@ Took long time for first download and build.
 - Run
 It can be run on on Qemu and Google Cloud.
 - Doc: Google Container is a varient of Google Chrome OS, the doc to its build system is same as the chrome os build system; there are some doc to its specific features.
-
 
 * Flatcar Linux
 - components and Build
@@ -146,14 +144,20 @@ Target for EKS node so runs EC2 and dependency on EKS. Since it is on top of Ama
 - Doc
 github address
 
-
 * Things to consider how to select
 
 - Go with what cloud platform offers to aim at quick start
 - Roll your own, if the Open Source one don't suit
 
-* Refs
+* Takeaways
+- why container os?
+- What are the components?
+- what are the open source options?
+- How to build one?
 
+* Thank you 
+
+* Refs
 - [pm](https://linuxconfig.org/comparison-of-major-linux-package-management-systems)
 - [podman and buildah](https://developers.redhat.com/blog/2019/02/21/podman-and-buildah-for-docker-users/)
 - [rpm](https://en.wikipedia.org/wiki/RPM_Package_Manager)
