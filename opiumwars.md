@@ -103,7 +103,7 @@ In contemporary times, the balance of power has shifted, with China emerging as 
 
 In hindsight, China could have taken several steps to better protect its interests and sovereignty during the Opium War. These include implementing more effective measures to regulate trade and control the influx of opium, strengthening its military capabilities, pursuing diplomatic solutions to resolve conflicts, and undertaking comprehensive reforms to modernize its institutions and adapt to the changing global landscape. By doing so, China could have potentially mitigated the adverse consequences of foreign intervention and maintained its sovereignty more effectively.
 
-## Treatie
+## Treaties
 
 <details>
   <summary>Click to Show Details of questions to chatgpt</summary>
